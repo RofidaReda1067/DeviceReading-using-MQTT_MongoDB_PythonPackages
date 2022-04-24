@@ -3,9 +3,9 @@ import time
 import pymongo as py
 
 client =py.MongoClient("mongodb+srv://iot12345:iot12345@mycluster.a5fvb.mongodb.net/myDB?retryWrites=true&w=majority")
-clientdb=py.MongoClient("mongodb://localhost:27017//")
-db = clientdb["senseIt"]
-col = db["status-collection"]
+# clientdb=py.MongoClient("mongodb://localhost:27017//")
+# db = clientdb["senseIt"]
+# col = db["status-collection"]
 
 
 def on_message(client, userdata, message):

@@ -6,7 +6,7 @@ import pymongo as py
 
 client =py.MongoClient("mongodb+srv://iot12345:iot12345@mycluster.a5fvb.mongodb.net/myDB?retryWrites=true&w=majority")
 db=client["myProject"]
-col=db["door_status_outside"]
+col=db.door_status_inside
 
 
 client=mqtt.Client("door_status_collection")
